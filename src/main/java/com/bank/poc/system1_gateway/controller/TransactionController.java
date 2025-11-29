@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @RequestMapping("/api/gateway")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://banking-ui-l4rt.vercel.app/")
 public class TransactionController {
 
     private final RestTemplate restTemplate;
@@ -53,7 +53,7 @@ public class TransactionController {
         }
 
         // 5. Forward to System 2
-        String url = "String url = "https://deploying-system2-corebank.onrender.com/api/core/process";
+        String url = "https://deploying-system2-corebank.onrender.com/api/core/process";
         return restTemplate.postForObject(url, req, TransactionResponse.class);
     }
 }

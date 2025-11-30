@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @RequestMapping("/api/gateway")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "https://banking-ui-l4rt.vercel.app/")
+@CrossOrigin(origins = "https://banking-ui-eight.vercel.app")
 public class TransactionController {
 
     private final RestTemplate restTemplate;
